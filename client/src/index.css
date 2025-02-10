@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=VT323&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+.bg-upside-down {
+  background-image: url("../src/assets/HeroSection.png");
+  background-size: cover; /* Adjust size as needed */
+  background-position: center;
+  transform: scaleY(-1);
+}
+
+.font-Montserrot {
+  font-family: "Montserrat", serif;
+}
+
+.font-VT323 {
+  font-family: "VT323", serif;
+  letter-spacing: 2px;
+}
+
+.gallery_container {
+  background-image: url("../src/assets/gallery.svg");
+  background-size: 100% 100%;
+}
+.create_nft_container {
+  background-image: url("../src/assets/CreateNft.png");
+  background-size: cover;
+}
+.hero_section {
+  background-image: url("../src/assets/HeroSection.png");
+  background-size: cover;
+}
+
+.faq-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.faq-container::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  margin-right:10px ;
+}
+
+.faq-container::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+.faq-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.faq-container {
+  scrollbar-color: #f84a6d rgba(255, 255, 255, 0.1);
+  scrollbar-width: thin;
+}

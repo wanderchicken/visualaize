@@ -1,0 +1,9 @@
+ const formatEther = (wei: string | number): string => {
+    const weiValue = BigInt(wei);
+    const etherValue = weiValue / BigInt(10 ** 18);
+    const remainder = weiValue % BigInt(10 ** 18);
+    const formattedEther = `${etherValue}.${remainder
+      .toString()
+      .padStart(18, "0")}`;
+    return formattedEther;
+  };
